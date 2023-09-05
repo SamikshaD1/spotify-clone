@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Circular Std;
+  background: linear-gradient(180deg, #121816 0%, #000 89.7%);
+}
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.sam {
+  display: flex;
+}
+.sidebar {
+  width: 230px;
+  height: 1080px;
+  background: #000;
+  color: #7a7a7a;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top-sidebar {
+  padding: 1vw 1vw;
+}
+.top-sidebar p:hover {
+  color: white;
+  font-size: 15px;
+}
+.topside-title1 p {
+  height: 40px;
+  border-radius: 4px;
+  background-color: #000;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topside-title1 a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+.topside-title1 a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+.topside-title1 img {
+  padding: 0 10px;
+}
+.topside-title2 p {
+  height: 42px;
+  border-radius: 4px;
+  background-color: #000;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topside-title2 img {
+  padding: 0 10px;
+}
+.bottom-sidebar {
+  padding: 132px 0;
+}
+.bottom-sidebar img {
+  padding: 0 1vw;
+}
+
+/* Main section  */
+
+.mainbar {
+  width: calc(100% - 200px);
+  height: 1080px;
+  top: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+.maintop {
+  background: linear-gradient(180deg, #90aea7 0%, #000 89.7%);
+  height: 400px;
+  width: 100%;
+  color: #e7dede;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+#playlist {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.26px;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#pop {
+  color: #fff;
+  font-size: 90px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -1.8px;
+}
+#pop:hover {
+  transform: scale(1.1);
+}
+#playlist:hover {
+  color: #fff;
+  font-weight: 800;
+}
+#lorem {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 146.9%; /* 20.566px */
+  letter-spacing: -0.28px;
+  opacity: 0.7;
+}
+.mainbottom {
+  color: rgb(167, 158, 158);
+  background-color: black;
+  height: 700px;
+  width: 100%;
+}
+.mainbottom-img {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.mainbottom-img #bk:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* playlist  */
+
+.song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 10px 30px;
+  background-color: #181818;
+  height: 56px;
+  border-radius: 5px;
+}
+.top-footer .hold-on:hover,
+.top-footer .jb:hover,
+.song .firstcolumn :hover,
+.song .lastcolumn :hover {
+  color: white;
+  transform: scale(1.1);
+}
+.firstcolumn {
+  display: inline-flex;
+  align-items: center;
+}
+.lastcolumn {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Footer-section  */
+.footer {
+  width: 100%;
+  height: 93px;
+  flex-shrink: 0;
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+}
+.top-footer {
+  display: inline-flex;
+  align-items: center;
+}
+
+.mid-footer:hover,
+.bottom-footer:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.top-footer .hold-on {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.188px; /* 121.25% */
+  padding: 0 10px;
+}
+.top-footer .jb {
+  color: #fff;
+  font-family: Circular Std;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 0 10px;
+}
+.mid-footer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* styles.css */
+
+/* Style the audio player container */
+.custom-audio {
+  background-color: #000; /* Change the background color */
+  width: 700px;
+  height: 20px;
+  padding: 5px; /* Add padding for spacing */
+  opacity: 0.5;
+}
+/* Style the audio player controls for non-WebKit browsers (e.g., Firefox) */
+/* .custom-audio::-webkit-media-controls-start-playback-button,
+.custom-audio::-webkit-media-controls-current-time-display,
+.custom-audio::-webkit-media-controls-time-remaining-display,
+.custom-audio::-webkit-media-controls-mute-button,
+.custom-audio::-webkit-media-controls-volume-slider {
+  display: none; /* Hide these controls for WebKit browsers */
+
+.bottom-footer {
+  cursor: pointer;
+}
+
+/* media query  */
+
+@media (max-width: 800px) {
+  .footer {
+    display: none;
+  }
+  .lastcolumn {
+    display: none;
+  }
+  .future {
+    display: none;
+  }
+  .song {
+    width: 100%;
+  }
+  .maintop {
+    width: 100%;
+  }
+  .playlist {
+    width: 100%;
+  }
+  .maintop {
+    flex-wrap: wrap;
+  }
+  .now {
+    display: none;
+  }
+}
